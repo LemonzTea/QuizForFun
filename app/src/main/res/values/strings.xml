@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Quiz for Fun</string>
+    <string name="literature">Literature</string>
+    <string name="date">Date</string>
+    <string name="math">Math</string>
+    <string name="sort">Sort:</string>
+    <string name="geography">Geography</string>
+    <string name="your_total_score">Your Total Score:</string>
+    <string name="username">Username:</string>
+    <string name="password">Password:</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="app_logo">App Logo</string>
+    <string name="logging_out">Logging Out..</string>
+    <string name="math_quiz">Math Quiz</string>
+    <string name="geography_quiz">Geography Quiz</string>
+    <string name="literature_quiz">Literature Quiz</string>
+    <string name="view_results">View Results</string>
+    <string name="when_you_are_ready_hit_the_start_button_to_start_the_quiz_n_nyou_will_not_be_able_to_return_to_a_previous_question_upon_completion">When you are ready, hit the start button to start the quiz. \n\nYou will not be able to return to a previous question upon completion</string>
+    <string name="start_quiz">Start Quiz</string>
+    <string name="answer">Answer</string>
+    <string name="submit">Submit</string>
+    <string name="ok">OK</string>
+    <string name="each_correct_attempt_will_increase_your_score_by_5_points_n_neach_incorrect_attempt_will_reduce_your_score_by_2_points_n_nduring_the_quiz_attempt_if_you_return_to_the_main_menu_the_quiz_attempt_will_not_be_counted_towards_your_total_score_n_nthe_minimum_score_for_each_quiz_is_0_points_it_is_not_possible_for_the_score_to_be_negative">Each correct attempt will increase your score by 5 points\n\nEach incorrect attempt will reduce your score by 2 points\n\nDuring the quiz attempt, if you return to the main menu, the quiz attempt will not be counted towards your total score.\n\nThe minimum score for each quiz is 0 points. It is not possible for the score to be negative.</string>
+    <string name="rules">Rules</string>
+    <string name="email">Email:</string>
+    <string name="confirm_password">Confirm Password:</string>
+    <string name="continue_btn">Continue</string>
+</resources>

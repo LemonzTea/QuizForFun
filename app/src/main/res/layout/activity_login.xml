@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/Fixed_LoginActivity_ImageView_Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_logo"
+        android:src="@drawable/icon"
+        app:layout_constraintBottom_toTopOf="@+id/LoginActivity_EditText_Username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Fixed_LoginActivity_TextView_Username"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/username"
+        android:textSize="@dimen/default_size"
+        app:layout_constraintBottom_toBottomOf="@+id/LoginActivity_EditText_Username"
+        app:layout_constraintStart_toStartOf="@+id/Fixed_LoginActivity_TextView_Password"
+        app:layout_constraintTop_toTopOf="@+id/LoginActivity_EditText_Username" />
+
+    <TextView
+        android:id="@+id/Fixed_LoginActivity_TextView_Password"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/password"
+        android:textSize="@dimen/default_size"
+        app:layout_constraintBottom_toBottomOf="@+id/LoginActivity_EditText_Password"
+        app:layout_constraintStart_toStartOf="@+id/LoginActivity_Button_Login"
+        app:layout_constraintTop_toTopOf="@+id/LoginActivity_EditText_Password" />
+
+    <EditText
+        android:id="@+id/LoginActivity_EditText_Username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/default_size"
+        app:layout_constraintBottom_toTopOf="@+id/LoginActivity_EditText_Password"
+        app:layout_constraintEnd_toEndOf="@+id/LoginActivity_EditText_Password"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Fixed_LoginActivity_TextView_Username"
+        app:layout_constraintTop_toBottomOf="@+id/Fixed_LoginActivity_ImageView_Icon" />
+
+    <EditText
+        android:id="@+id/LoginActivity_EditText_Password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textSize="@dimen/default_size"
+        app:layout_constraintBottom_toTopOf="@+id/LoginActivity_Button_Login"
+        app:layout_constraintEnd_toEndOf="@+id/LoginActivity_Button_Login"
+        app:layout_constraintStart_toEndOf="@+id/Fixed_LoginActivity_TextView_Password"
+        app:layout_constraintTop_toBottomOf="@+id/LoginActivity_EditText_Username" />
+
+    <Button
+        android:id="@+id/LoginActivity_Button_Login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/login"
+        android:textSize="@dimen/default_size"
+        app:layout_constraintBottom_toTopOf="@+id/LoginActivity_Button_Register"
+        app:layout_constraintEnd_toEndOf="@+id/LoginActivity_Button_Register"
+        app:layout_constraintStart_toStartOf="@+id/LoginActivity_Button_Register"
+        app:layout_constraintTop_toBottomOf="@+id/Fixed_LoginActivity_TextView_Password" />
+
+    <Button
+        android:id="@+id/LoginActivity_Button_Register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/register"
+        android:textSize="@dimen/default_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginActivity_Button_Login" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

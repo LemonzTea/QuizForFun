@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/actions_instructions"
+        android:orderInCategory="1"
+        android:title="Rules"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/action_changePassword"
+        android:orderInCategory="2"
+        android:title="Change Password"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="3"
+        android:title="Logout"
+        app:showAsAction="collapseActionView" />
+</menu>

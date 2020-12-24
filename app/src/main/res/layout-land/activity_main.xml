@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/MainActivity_ImageButton_Math"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/math_quiz"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/MainActivity_ImageButton_Geography"
+        app:layout_constraintEnd_toStartOf="@+id/MainActivity_ImageButton_Literature"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/math" />
+
+    <TextView
+        android:id="@+id/MainActivity_TextView_Math"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#B3F44336"
+        android:text="@string/math_quiz"
+        android:textColor="@color/design_default_color_background"
+        android:textSize="@dimen/default_size"
+        app:layout_constraintStart_toStartOf="@+id/MainActivity_ImageButton_Math"
+        app:layout_constraintTop_toTopOf="@+id/MainActivity_ImageButton_Math" />
+
+    <ImageButton
+        android:id="@+id/MainActivity_ImageButton_Geography"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/geography"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/MainActivity_ImageButton_Math"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/MainActivity_ImageButton_Math"
+        app:layout_constraintTop_toBottomOf="@+id/MainActivity_ImageButton_Math"
+        app:srcCompat="@drawable/geography" />
+
+    <TextView
+        android:id="@+id/MainActivity_TextView_Geography"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#B3F44336"
+        android:text="@string/geography_quiz"
+        android:textColor="@color/white"
+        android:textSize="@dimen/default_size"
+        app:layout_constraintStart_toStartOf="@+id/MainActivity_ImageButton_Geography"
+        app:layout_constraintTop_toTopOf="@+id/MainActivity_ImageButton_Geography" />
+
+    <ImageButton
+        android:id="@+id/MainActivity_ImageButton_Literature"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:contentDescription="@string/literature_quiz"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/MainActivity_ImageButton_Math"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/MainActivity_ImageButton_Math"
+        app:layout_constraintTop_toTopOf="@+id/MainActivity_ImageButton_Math"
+        app:srcCompat="@drawable/literature" />
+
+    <TextView
+        android:id="@+id/MainActivity_TextView_Literature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#B3F44336"
+        android:text="@string/literature_quiz"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/default_size"
+        app:layout_constraintStart_toStartOf="@+id/MainActivity_ImageButton_Literature"
+        app:layout_constraintTop_toTopOf="@+id/MainActivity_ImageButton_Literature" />
+
+    <ImageButton
+        android:id="@+id/MainActivity_ImageButton_ViewResults"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/view_results"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/MainActivity_ImageButton_Geography"
+        app:layout_constraintEnd_toEndOf="@+id/MainActivity_ImageButton_Literature"
+        app:layout_constraintStart_toStartOf="@+id/MainActivity_ImageButton_Literature"
+        app:layout_constraintTop_toTopOf="@+id/MainActivity_ImageButton_Geography"
+        app:srcCompat="@drawable/result" />
+
+    <TextView
+        android:id="@+id/MainActivity_TextView_ViewResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#B3F44336"
+        android:text="@string/view_results"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/default_size"
+        app:layout_constraintStart_toStartOf="@+id/MainActivity_ImageButton_ViewResults"
+        app:layout_constraintTop_toTopOf="@+id/MainActivity_ImageButton_ViewResults" />
+</androidx.constraintlayout.widget.ConstraintLayout>

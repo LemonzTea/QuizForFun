@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_size">18sp</dimen>
+    <dimen name="title_size">32sp</dimen>
+    <dimen name="sort_size">10sp</dimen>
+</resources>
